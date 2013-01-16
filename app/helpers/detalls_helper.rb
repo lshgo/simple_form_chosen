@@ -1,0 +1,2 @@
+module DetallsHelper
+end

@@ -1,0 +1,135 @@
+<%= simple_form_for @user do |f| %>
+<%= f.input :pwd, :as =>:chosen, :input_html => { :chosen_class => "wocaonema" , :style => "width:350px;", :url => "/detalls/search"} %>
+<% end %>
+
+ 
+
+
+
+
+
+
+
+<!--
+<%= simple_form_for @user do |f| %>
+  <%= f.input :name %> 
+  <%= f.input :pwd %>  
+  <%= f.association :detall, :collection => {"" => "没有匹配结果"}, :input_html => { :class => 'chzn-select wocaonema',:style => "width:350px;", :url => "/detalls/search"} %>
+  <%= f.button :submit %>
+<% end %>
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :pwd %><br />
+    <%= f.text_field :pwd %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %> 
+-->
+
+
+
+
+<!-- <select data-placeholder="Choose a country..." style="width:350px;"  class="chzn-select wori"  tabindex="2"><option value=""></option>  </select>
+<button class='btn btn-mini handle_click' rel='tooltip' data-original-title='处理'>我操</button>
+<select data-placeholder="Choose a Country..." class="chzn-select worinima" style="width:350px;" tabindex="2">
+          <option value=""></option> 
+          <option value="United States">United States</option> 
+          <option value="United Kingdom">United Kingdom</option> 
+          <option value="Afghanistan">Afghanistan</option>  
+          <option value="Gabon">Gabon</option> 
+          <option value="Gambia">Gambia</option>    
+          <option value="Vanuatu">Vanuatu</option> 
+          <option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option> 
+          <option value="Viet Nam">Viet Nam</option> 
+          <option value="Virgin Islands, British">Virgin Islands, British</option> 
+          <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option> 
+          <option value="Wallis and Futuna">Wallis and Futuna</option> 
+          <option value="Western Sahara">Western Sahara</option> 
+          <option value="Yemen">Yemen</option> 
+          <option value="Zambia">Zambia</option> 
+          <option value="Zimbabwe">Zimbabwe</option>
+        </select>
+<br/><br/><br/><br/>
+
+<script type="text/javascript">
+  $("select").chosen({
+    tool:{
+      add: {
+        html: "<a href='#'><i class='icon-ok'></i></a>",
+        click:  function() {
+
+        }
+      }
+    },
+    blur: function(){
+
+    }
+  });
+
+
+</script>

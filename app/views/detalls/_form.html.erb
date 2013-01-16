@@ -1,0 +1,25 @@
+<%= form_for(@detall) do |f| %>
+  <% if @detall.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@detall.errors.count, "error") %> prohibited this detall from being saved:</h2>
+
+      <ul>
+      <% @detall.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :age %><br />
+    <%= f.text_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :ihone %><br />
+    <%= f.text_field :ihone %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
