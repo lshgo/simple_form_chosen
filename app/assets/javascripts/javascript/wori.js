@@ -1,10 +1,18 @@
-  
+// function chosen_loads(select_name){
+// 	var selectObj = $("select."+select_name);
+// 	selectObj.chosen({no_results_text: "没有匹配结果"}).keyup(function(){
+// 		alert("asdfasdf")
+// 	})
+// }
+
+
 function chosen_load(select_name){
 	var selectObj = $("select."+select_name);               //选择框对像
 	selectObj.removeAttr("multiple")                        //删掉多选
 	selectObj.chosen({no_results_text: "没有匹配结果"});     //更新chosen对像
 	var chznObj = $("#"+selectObj.attr("id")+"_chzn")       //chosen对像时会产生div元素
 	var textObj = chznObj.find("input[type=text]") //$("#"+selectObj.attr("id")+"_chzn_search")  //输入文体框对像
+	textObj.attr("name","user[asdfasdfs]")
 	textObj.unbind()      //这里是删chosen默认的的事件
 	var returnobj = []    //返回对像
 	textObj.bind("blur", function(){    //输入框失去焦点事bind

@@ -82,7 +82,7 @@ class DetallsController < ApplicationController
   end
 
   def search
-    @deta = Detall.where(:age => params[:val])
+    @deta = Detall.where(:age => params[:search_param])
     respond_to do |format|
       format.html { render :json => @deta }
       format.json { render :json => @deta }

@@ -1,5 +1,7 @@
 <%= simple_form_for @user do |f| %>
-<%= f.input :pwd, :as =>:chosen, :input_html => { :chosen_class => "wocaonema" , :style => "width:350px;", :url => "/detalls/search"} %>
+  <%= f.input :name %>  
+  <%= f.input :pwd, :as =>:chosen, :input_html =>{ :style => "width:350px;", :remote_url => "/detalls/search"} %>
+  <%= f.button :submit %>
 <% end %>
 
  

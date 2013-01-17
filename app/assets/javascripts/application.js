@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-//= require ./javascript/chosen.jquery.js
-//= require ./javascript/wori.js
+//!= require ./javascript/chosen.jquery.js
+//!= require ./javascript/wori.js
+//= require chosen.ex
